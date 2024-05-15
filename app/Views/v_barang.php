@@ -21,13 +21,16 @@
                         <p class="card-text">Stok: <?= $item['stok'] ?></p>
                         <div class="mt-auto d-flex justify-content-between">
                             <a href="<?= site_url('barang/detail/' . $item['id']) ?>" class="btn btn-info">Detail</a>
+                            
                             <a href="<?= site_url('cart/add/' . $item['id']) ?>" class="btn btn-success">Tambah ke Keranjang</a>
+                             
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
         <?php endforeach; ?>
+        
     </div>
 </div>
 <?= $this->endSection() ?>

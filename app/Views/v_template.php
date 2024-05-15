@@ -34,10 +34,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/products">Products</a>
+                        <a class="nav-link" href="/v_barang">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/cart">Cart</a>
+                        <a class="nav-link" href="/v_cart">Cart</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/contact">Contact</a>

@@ -70,4 +70,6 @@ class c_barang extends BaseController
 
         return redirect()->to('/barang');
     }
+
+
 }
