@@ -1,0 +1,259 @@
+ERROR - 2024-04-01 11:41:11 --> mysqli_sql_exception: Table 'mhs.datamahasiswas' doesn't exist in C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codeigniter4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4\app\Controllers\M_MahasiswaController.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->display_mahasiswa()
+#8 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+#9 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-04-01 11:41:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'mhs.datamahasiswas' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `datamahasiswas`', [], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\M_MahasiswaController.php(13): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->display_mahasiswa()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-04-01 11:41:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'mhs.datamahasiswas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `datamahasiswas`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `datamahasiswas`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `datamahasiswas`', [], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\M_MahasiswaController.php(13): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->display_mahasiswa()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-04-01 11:41:11 --> [Caused by] mysqli_sql_exception: Table 'mhs.datamahasiswas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `datamahasiswas`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `datamahasiswas`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `datamahasiswas`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `datamahasiswas`', [], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\M_MahasiswaController.php(13): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->display_mahasiswa()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-04-01 11:48:33 --> ErrorException: Undefined variable $nim
+in APPPATH\Views\M_Mahasiswa.php on line 15.
+ 1 APPPATH\Views\M_Mahasiswa.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nim', 'C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php', 15)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('M_Mahasiswa', [], true)
+ 5 APPPATH\Controllers\M_MahasiswaController.php(24): view('M_Mahasiswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->display_mahasiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-04-01 11:50:49 --> ErrorException: Undefined variable $nim
+in APPPATH\Views\M_Mahasiswa.php on line 15.
+ 1 APPPATH\Views\M_Mahasiswa.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nim', 'C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php', 15)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('M_Mahasiswa', [], true)
+ 5 APPPATH\Controllers\M_MahasiswaController.php(24): view('M_Mahasiswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->display_mahasiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-04-01 11:50:51 --> ErrorException: Undefined variable $nim
+in APPPATH\Views\M_Mahasiswa.php on line 15.
+ 1 APPPATH\Views\M_Mahasiswa.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nim', 'C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php', 15)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('M_Mahasiswa', [], true)
+ 5 APPPATH\Controllers\M_MahasiswaController.php(24): view('M_Mahasiswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->display_mahasiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-04-01 11:50:52 --> ErrorException: Undefined variable $nim
+in APPPATH\Views\M_Mahasiswa.php on line 15.
+ 1 APPPATH\Views\M_Mahasiswa.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nim', 'C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php', 15)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('M_Mahasiswa', [], true)
+ 5 APPPATH\Controllers\M_MahasiswaController.php(24): view('M_Mahasiswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->display_mahasiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-04-01 11:50:53 --> ErrorException: Undefined variable $nim
+in APPPATH\Views\M_Mahasiswa.php on line 15.
+ 1 APPPATH\Views\M_Mahasiswa.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nim', 'C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php', 15)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('M_Mahasiswa', [], true)
+ 5 APPPATH\Controllers\M_MahasiswaController.php(24): view('M_Mahasiswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->display_mahasiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-04-01 11:52:17 --> ErrorException: Undefined variable $nim
+in APPPATH\Views\M_Mahasiswa.php on line 15.
+ 1 APPPATH\Views\M_Mahasiswa.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nim', 'C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php', 15)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('M_Mahasiswa', [], true)
+ 5 APPPATH\Controllers\M_MahasiswaController.php(27): view('M_Mahasiswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->display_mahasiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-04-01 11:53:48 --> ErrorException: Undefined variable $nim
+in APPPATH\Views\M_Mahasiswa.php on line 15.
+ 1 APPPATH\Views\M_Mahasiswa.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nim', 'C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php', 15)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('M_Mahasiswa', [], true)
+ 5 APPPATH\Controllers\M_MahasiswaController.php(28): view('M_Mahasiswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->display_mahasiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-04-01 11:55:50 --> ErrorException: Undefined array key "nim"
+in APPPATH\Views\M_Mahasiswa.php on line 17.
+ 1 APPPATH\Views\M_Mahasiswa.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nim"', 'C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php', 17)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('M_Mahasiswa', [], true)
+ 5 APPPATH\Controllers\M_MahasiswaController.php(28): view('M_Mahasiswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->display_mahasiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+ERROR - 2024-04-01 13:15:50 --> mysqli_sql_exception: Unknown column 'nama_mahasiswa.nama' in 'field list' in C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `nama_ma...', 0)
+#1 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama_ma...')
+#2 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama_ma...')
+#3 C:\xampp\htdocs\codeigniter4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `nama_ma...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4\app\Models\DataMahasiswa.php(18): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4\app\Controllers\M_MahasiswaController.php(17): App\Models\DataMahasiswa->getJoinedData()
+#6 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->display_mahasiswa()
+#7 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+#8 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-04-01 13:15:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nama_mahasiswa.nama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `nama_mahasiswa`.`nama`, `nim_mahasiswa`.`nim`, `umur_mahasiswa`.`umur`
+FROM `mahasiswa`
+JOIN `nim_mahasiswa` ON `nama_mahasiswa`.`id` = `nim_mahasiswa`.`id`
+JOIN `umur_mahasiswa` ON `nama_mahasiswa`.`id` = `umur_mahasiswa`.`id`', [], false)
+ 2 APPPATH\Models\DataMahasiswa.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\M_MahasiswaController.php(17): App\Models\DataMahasiswa->getJoinedData()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->display_mahasiswa()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-04-01 13:15:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nama_mahasiswa.nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama_mahasiswa`.`nama`, `nim_mahasiswa`.`nim`, `umur_mahasiswa`.`umur`
+FROM `mahasiswa`
+JOIN `nim_mahasiswa` ON `nama_mahasiswa`.`id` = `nim_mahasiswa`.`id`
+JOIN `umur_mahasiswa` ON `nama_mahasiswa`.`id` = `umur_mahasiswa`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama_mahasiswa`.`nama`, `nim_mahasiswa`.`nim`, `umur_mahasiswa`.`umur`
+FROM `mahasiswa`
+JOIN `nim_mahasiswa` ON `nama_mahasiswa`.`id` = `nim_mahasiswa`.`id`
+JOIN `umur_mahasiswa` ON `nama_mahasiswa`.`id` = `umur_mahasiswa`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `nama_mahasiswa`.`nama`, `nim_mahasiswa`.`nim`, `umur_mahasiswa`.`umur`
+FROM `mahasiswa`
+JOIN `nim_mahasiswa` ON `nama_mahasiswa`.`id` = `nim_mahasiswa`.`id`
+JOIN `umur_mahasiswa` ON `nama_mahasiswa`.`id` = `umur_mahasiswa`.`id`', [], false)
+ 4 APPPATH\Models\DataMahasiswa.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\M_MahasiswaController.php(17): App\Models\DataMahasiswa->getJoinedData()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->display_mahasiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-04-01 13:15:50 --> [Caused by] mysqli_sql_exception: Unknown column 'nama_mahasiswa.nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `nama_mahasiswa`.`nama`, `nim_mahasiswa`.`nim`, `umur_mahasiswa`.`umur`
+FROM `mahasiswa`
+JOIN `nim_mahasiswa` ON `nama_mahasiswa`.`id` = `nim_mahasiswa`.`id`
+JOIN `umur_mahasiswa` ON `nama_mahasiswa`.`id` = `umur_mahasiswa`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama_mahasiswa`.`nama`, `nim_mahasiswa`.`nim`, `umur_mahasiswa`.`umur`
+FROM `mahasiswa`
+JOIN `nim_mahasiswa` ON `nama_mahasiswa`.`id` = `nim_mahasiswa`.`id`
+JOIN `umur_mahasiswa` ON `nama_mahasiswa`.`id` = `umur_mahasiswa`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama_mahasiswa`.`nama`, `nim_mahasiswa`.`nim`, `umur_mahasiswa`.`umur`
+FROM `mahasiswa`
+JOIN `nim_mahasiswa` ON `nama_mahasiswa`.`id` = `nim_mahasiswa`.`id`
+JOIN `umur_mahasiswa` ON `nama_mahasiswa`.`id` = `umur_mahasiswa`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `nama_mahasiswa`.`nama`, `nim_mahasiswa`.`nim`, `umur_mahasiswa`.`umur`
+FROM `mahasiswa`
+JOIN `nim_mahasiswa` ON `nama_mahasiswa`.`id` = `nim_mahasiswa`.`id`
+JOIN `umur_mahasiswa` ON `nama_mahasiswa`.`id` = `umur_mahasiswa`.`id`', [], false)
+ 5 APPPATH\Models\DataMahasiswa.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\M_MahasiswaController.php(17): App\Models\DataMahasiswa->getJoinedData()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->display_mahasiswa()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-04-01 13:25:03 --> Error: Class "App\Models\MahasiswaModel" not found
+in APPPATH\Controllers\M_MahasiswaController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->display_mahasiswa()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-04-01 13:27:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "mahasiswa_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mahasiswa_view.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('mahasiswa_view', [], true)
+ 3 APPPATH\Controllers\M_MahasiswaController.php(14): view('mahasiswa_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->display_mahasiswa()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-04-01 13:28:01 --> ErrorException: Undefined variable $nim
+in APPPATH\Views\M_Mahasiswa.php on line 15.
+ 1 APPPATH\Views\M_Mahasiswa.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nim', 'C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php', 15)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('M_Mahasiswa', [], true)
+ 5 APPPATH\Controllers\M_MahasiswaController.php(14): view('M_Mahasiswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->display_mahasiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')

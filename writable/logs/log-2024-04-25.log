@@ -1,0 +1,7 @@
+CRITICAL - 2024-04-25 01:50:41 --> Error: Call to a member function isValid() on null
+in APPPATH\Controllers\c_mhs.php on line 121.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\c_mhs->edit('1')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_mhs))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4pt2\\public\\index.php')

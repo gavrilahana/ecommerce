@@ -1,0 +1,167 @@
+CRITICAL - 2024-04-03 06:16:45 --> ErrorException: Undefined property: stdClass::$id
+in APPPATH\Views\M_Mahasiswa.php on line 52.
+ 1 APPPATH\Views\M_Mahasiswa.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php', 52)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('M_Mahasiswa', [], true)
+ 5 APPPATH\Controllers\M_MahasiswaController.php(13): view('M_Mahasiswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->display_mahasiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-04-03 06:17:29 --> ErrorException: Undefined property: stdClass::$id
+in APPPATH\Views\M_Mahasiswa.php on line 52.
+ 1 APPPATH\Views\M_Mahasiswa.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php', 52)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('M_Mahasiswa', [], true)
+ 5 APPPATH\Controllers\M_MahasiswaController.php(13): view('M_Mahasiswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->display_mahasiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-04-03 06:19:10 --> ErrorException: Undefined property: stdClass::$id
+in APPPATH\Views\M_Mahasiswa.php on line 52.
+ 1 APPPATH\Views\M_Mahasiswa.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php', 52)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('M_Mahasiswa', [], true)
+ 5 APPPATH\Controllers\M_MahasiswaController.php(13): view('M_Mahasiswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->display_mahasiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-04-03 06:19:11 --> ErrorException: Undefined property: stdClass::$id
+in APPPATH\Views\M_Mahasiswa.php on line 52.
+ 1 APPPATH\Views\M_Mahasiswa.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php', 52)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('M_Mahasiswa', [], true)
+ 5 APPPATH\Controllers\M_MahasiswaController.php(13): view('M_Mahasiswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->display_mahasiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-04-03 06:19:12 --> ErrorException: Undefined property: stdClass::$id
+in APPPATH\Views\M_Mahasiswa.php on line 52.
+ 1 APPPATH\Views\M_Mahasiswa.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php', 52)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('M_Mahasiswa', [], true)
+ 5 APPPATH\Controllers\M_MahasiswaController.php(13): view('M_Mahasiswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->display_mahasiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+ERROR - 2024-04-03 06:20:43 --> mysqli_sql_exception: Unknown column 'mahasiswa.id' in 'field list' in C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `mahasis...', 0)
+#1 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `mahasis...')
+#2 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `mahasis...')
+#3 C:\xampp\htdocs\codeigniter4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `mahasis...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4\app\Models\DataMhs.php(17): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4\app\Controllers\M_MahasiswaController.php(12): App\Models\DataMhs->getMahasiswaData()
+#6 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->display_mahasiswa()
+#7 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+#8 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-04-03 06:20:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'mahasiswa.id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `mahasiswa`.`id`, `nama_mahasiswa`.`nama`, `nim_mahasiswa`.`nim`, `umur_mahasiswa`.`umur`
+FROM `nama_mahasiswa`
+JOIN `nim_mahasiswa` ON `nama_mahasiswa`.`id` = `nim_mahasiswa`.`id`
+JOIN `umur_mahasiswa` ON `nama_mahasiswa`.`id` = `umur_mahasiswa`.`id`', [], false)
+ 2 APPPATH\Models\DataMhs.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\M_MahasiswaController.php(12): App\Models\DataMhs->getMahasiswaData()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->display_mahasiswa()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-04-03 06:20:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'mahasiswa.id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `mahasiswa`.`id`, `nama_mahasiswa`.`nama`, `nim_mahasiswa`.`nim`, `umur_mahasiswa`.`umur`
+FROM `nama_mahasiswa`
+JOIN `nim_mahasiswa` ON `nama_mahasiswa`.`id` = `nim_mahasiswa`.`id`
+JOIN `umur_mahasiswa` ON `nama_mahasiswa`.`id` = `umur_mahasiswa`.`id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `mahasiswa`.`id`, `nama_mahasiswa`.`nama`, `nim_mahasiswa`.`nim`, `umur_mahasiswa`.`umur`
+FROM `nama_mahasiswa`
+JOIN `nim_mahasiswa` ON `nama_mahasiswa`.`id` = `nim_mahasiswa`.`id`
+JOIN `umur_mahasiswa` ON `nama_mahasiswa`.`id` = `umur_mahasiswa`.`id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `mahasiswa`.`id`, `nama_mahasiswa`.`nama`, `nim_mahasiswa`.`nim`, `umur_mahasiswa`.`umur`
+FROM `nama_mahasiswa`
+JOIN `nim_mahasiswa` ON `nama_mahasiswa`.`id` = `nim_mahasiswa`.`id`
+JOIN `umur_mahasiswa` ON `nama_mahasiswa`.`id` = `umur_mahasiswa`.`id`', [], false)
+ 4 APPPATH\Models\DataMhs.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\M_MahasiswaController.php(12): App\Models\DataMhs->getMahasiswaData()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->display_mahasiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-04-03 06:20:43 --> [Caused by] mysqli_sql_exception: Unknown column 'mahasiswa.id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `mahasiswa`.`id`, `nama_mahasiswa`.`nama`, `nim_mahasiswa`.`nim`, `umur_mahasiswa`.`umur`
+FROM `nama_mahasiswa`
+JOIN `nim_mahasiswa` ON `nama_mahasiswa`.`id` = `nim_mahasiswa`.`id`
+JOIN `umur_mahasiswa` ON `nama_mahasiswa`.`id` = `umur_mahasiswa`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `mahasiswa`.`id`, `nama_mahasiswa`.`nama`, `nim_mahasiswa`.`nim`, `umur_mahasiswa`.`umur`
+FROM `nama_mahasiswa`
+JOIN `nim_mahasiswa` ON `nama_mahasiswa`.`id` = `nim_mahasiswa`.`id`
+JOIN `umur_mahasiswa` ON `nama_mahasiswa`.`id` = `umur_mahasiswa`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `mahasiswa`.`id`, `nama_mahasiswa`.`nama`, `nim_mahasiswa`.`nim`, `umur_mahasiswa`.`umur`
+FROM `nama_mahasiswa`
+JOIN `nim_mahasiswa` ON `nama_mahasiswa`.`id` = `nim_mahasiswa`.`id`
+JOIN `umur_mahasiswa` ON `nama_mahasiswa`.`id` = `umur_mahasiswa`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `mahasiswa`.`id`, `nama_mahasiswa`.`nama`, `nim_mahasiswa`.`nim`, `umur_mahasiswa`.`umur`
+FROM `nama_mahasiswa`
+JOIN `nim_mahasiswa` ON `nama_mahasiswa`.`id` = `nim_mahasiswa`.`id`
+JOIN `umur_mahasiswa` ON `nama_mahasiswa`.`id` = `umur_mahasiswa`.`id`', [], false)
+ 5 APPPATH\Models\DataMhs.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\M_MahasiswaController.php(12): App\Models\DataMhs->getMahasiswaData()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->display_mahasiswa()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-04-03 06:25:20 --> ErrorException: Undefined variable $mahasiswa
+in APPPATH\Views\M_Mahasiswa.php on line 46.
+ 1 APPPATH\Views\M_Mahasiswa.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mahasiswa', 'C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php', 46)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('M_Mahasiswa', [], true)
+ 5 APPPATH\Controllers\M_MahasiswaController.php(24): view('M_Mahasiswa')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->delete('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-04-03 13:40:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "V_Mahasiswa.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('V_Mahasiswa.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('V_Mahasiswa', [], true)
+ 3 APPPATH\Controllers\M_MahasiswaController.php(29): view('V_Mahasiswa', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->view('4')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-04-03 15:28:21 --> ErrorException: Undefined property: stdClass::$umur
+in APPPATH\Views\M_Mahasiswa.php on line 78.
+ 1 APPPATH\Views\M_Mahasiswa.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$umur', 'C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php', 78)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4\\app\\Views\\M_Mahasiswa.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('M_Mahasiswa', [], true)
+ 5 APPPATH\Controllers\M_MahasiswaController.php(40): view('M_Mahasiswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->search()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')

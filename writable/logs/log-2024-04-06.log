@@ -1,0 +1,20 @@
+CRITICAL - 2024-04-06 14:15:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "M_Mahasiswa.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('M_Mahasiswa.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('M_Mahasiswa', [], true)
+ 3 APPPATH\Controllers\M_MahasiswaController.php(13): view('M_Mahasiswa', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->display_mahasiswa()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-04-06 14:18:01 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "M_Mahasiswa.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('M_Mahasiswa.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('M_Mahasiswa', [], true)
+ 3 APPPATH\Controllers\M_MahasiswaController.php(13): view('M_Mahasiswa', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->display_mahasiswa()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')

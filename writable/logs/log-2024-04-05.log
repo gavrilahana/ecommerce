@@ -1,0 +1,326 @@
+CRITICAL - 2024-04-05 01:31:50 --> BadMethodCallException: Call to undefined method App\Models\DataMhs::insertMahasiswa
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\M_MahasiswaController.php(57): CodeIgniter\Model->__call('insertMahasiswa', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-04-05 01:32:56 --> BadMethodCallException: Call to undefined method App\Models\DataMhs::insertMahasiswa
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\M_MahasiswaController.php(60): CodeIgniter\Model->__call('insertMahasiswa', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+ERROR - 2024-04-05 01:35:03 --> mysqli_sql_exception: Unknown column 'nim' in 'field list' in C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `na...', 0)
+#1 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `na...')
+#2 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `na...')
+#3 C:\xampp\htdocs\codeigniter4\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `na...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4\app\Models\DataMhs.php(70): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\codeigniter4\app\Controllers\M_MahasiswaController.php(60): App\Models\DataMhs->insertMahasiswa(Array)
+#6 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->save()
+#7 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+#8 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-04-05 01:35:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nim' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nama_mahasiswa` (`nama`, `nim`, `umur`, `hp`, `Tanggal_Lahir`) VALUES (:nama:, :nim:, :umur:, :hp:, :Tanggal_Lahir:)', [...], false)
+ 2 APPPATH\Models\DataMhs.php(70): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\M_MahasiswaController.php(60): App\Models\DataMhs->insertMahasiswa([...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->save()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-04-05 01:35:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nim' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `nama_mahasiswa` (`nama`, `nim`, `umur`, `hp`, `Tanggal_Lahir`) VALUES (\'gg\', \'123456\', \'21\', \'089999888\', \'2002-09-10\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `nama_mahasiswa` (`nama`, `nim`, `umur`, `hp`, `Tanggal_Lahir`) VALUES (\'gg\', \'123456\', \'21\', \'089999888\', \'2002-09-10\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nama_mahasiswa` (`nama`, `nim`, `umur`, `hp`, `Tanggal_Lahir`) VALUES (:nama:, :nim:, :umur:, :hp:, :Tanggal_Lahir:)', [...], false)
+ 4 APPPATH\Models\DataMhs.php(70): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\M_MahasiswaController.php(60): App\Models\DataMhs->insertMahasiswa([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->save()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-04-05 01:35:03 --> [Caused by] mysqli_sql_exception: Unknown column 'nim' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `nama_mahasiswa` (`nama`, `nim`, `umur`, `hp`, `Tanggal_Lahir`) VALUES (\'gg\', \'123456\', \'21\', \'089999888\', \'2002-09-10\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `nama_mahasiswa` (`nama`, `nim`, `umur`, `hp`, `Tanggal_Lahir`) VALUES (\'gg\', \'123456\', \'21\', \'089999888\', \'2002-09-10\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `nama_mahasiswa` (`nama`, `nim`, `umur`, `hp`, `Tanggal_Lahir`) VALUES (\'gg\', \'123456\', \'21\', \'089999888\', \'2002-09-10\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `nama_mahasiswa` (`nama`, `nim`, `umur`, `hp`, `Tanggal_Lahir`) VALUES (:nama:, :nim:, :umur:, :hp:, :Tanggal_Lahir:)', [...], false)
+ 5 APPPATH\Models\DataMhs.php(70): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\M_MahasiswaController.php(60): App\Models\DataMhs->insertMahasiswa([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->save()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+ERROR - 2024-04-05 01:36:50 --> mysqli_sql_exception: Unknown column 'gg' in 'field list' in C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `na...', 0)
+#1 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `na...')
+#2 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `na...')
+#3 C:\xampp\htdocs\codeigniter4\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `na...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4\app\Models\DataMhs.php(73): CodeIgniter\Database\BaseBuilder->insert('gg')
+#5 C:\xampp\htdocs\codeigniter4\app\Controllers\M_MahasiswaController.php(60): App\Models\DataMhs->insertMahasiswa(Array)
+#6 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->save()
+#7 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+#8 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2024-04-05 01:36:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '123456) VALUES (:123456:)' at line 1 in C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ni...', 0)
+#1 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ni...')
+#2 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ni...')
+#3 C:\xampp\htdocs\codeigniter4\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ni...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4\app\Models\DataMhs.php(76): CodeIgniter\Database\BaseBuilder->insert('123456')
+#5 C:\xampp\htdocs\codeigniter4\app\Controllers\M_MahasiswaController.php(60): App\Models\DataMhs->insertMahasiswa(Array)
+#6 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->save()
+#7 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+#8 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2024-04-05 01:36:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '21) VALUES (:21:)' at line 1 in C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `um...', 0)
+#1 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `um...')
+#2 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `um...')
+#3 C:\xampp\htdocs\codeigniter4\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `um...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4\app\Models\DataMhs.php(79): CodeIgniter\Database\BaseBuilder->insert('21')
+#5 C:\xampp\htdocs\codeigniter4\app\Controllers\M_MahasiswaController.php(60): App\Models\DataMhs->insertMahasiswa(Array)
+#6 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->save()
+#7 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+#8 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2024-04-05 01:36:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '089999888) VALUES ('')' at line 1 in C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\codeigniter4\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4\app\Models\DataMhs.php(82): CodeIgniter\Database\BaseBuilder->insert('089999888')
+#5 C:\xampp\htdocs\codeigniter4\app\Controllers\M_MahasiswaController.php(60): App\Models\DataMhs->insertMahasiswa(Array)
+#6 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->save()
+#7 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+#8 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2024-04-05 01:36:50 --> mysqli_sql_exception: Unknown column '2002-09-10' in 'field list' in C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tg...', 0)
+#1 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tg...')
+#2 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tg...')
+#3 C:\xampp\htdocs\codeigniter4\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tg...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4\app\Models\DataMhs.php(85): CodeIgniter\Database\BaseBuilder->insert('2002-09-10')
+#5 C:\xampp\htdocs\codeigniter4\app\Controllers\M_MahasiswaController.php(60): App\Models\DataMhs->insertMahasiswa(Array)
+#6 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->save()
+#7 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+#8 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2024-04-05 01:36:58 --> mysqli_sql_exception: Unknown column 'gg' in 'field list' in C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `na...', 0)
+#1 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `na...')
+#2 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `na...')
+#3 C:\xampp\htdocs\codeigniter4\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `na...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4\app\Models\DataMhs.php(73): CodeIgniter\Database\BaseBuilder->insert('gg')
+#5 C:\xampp\htdocs\codeigniter4\app\Controllers\M_MahasiswaController.php(60): App\Models\DataMhs->insertMahasiswa(Array)
+#6 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->save()
+#7 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+#8 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2024-04-05 01:36:58 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '123456) VALUES (:123456:)' at line 1 in C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ni...', 0)
+#1 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ni...')
+#2 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ni...')
+#3 C:\xampp\htdocs\codeigniter4\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ni...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4\app\Models\DataMhs.php(76): CodeIgniter\Database\BaseBuilder->insert('123456')
+#5 C:\xampp\htdocs\codeigniter4\app\Controllers\M_MahasiswaController.php(60): App\Models\DataMhs->insertMahasiswa(Array)
+#6 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->save()
+#7 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+#8 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2024-04-05 01:36:58 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '21) VALUES (:21:)' at line 1 in C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `um...', 0)
+#1 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `um...')
+#2 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `um...')
+#3 C:\xampp\htdocs\codeigniter4\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `um...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4\app\Models\DataMhs.php(79): CodeIgniter\Database\BaseBuilder->insert('21')
+#5 C:\xampp\htdocs\codeigniter4\app\Controllers\M_MahasiswaController.php(60): App\Models\DataMhs->insertMahasiswa(Array)
+#6 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->save()
+#7 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+#8 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2024-04-05 01:36:58 --> mysqli_sql_exception: Column count doesn't match value count at row 1 in C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\codeigniter4\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4\app\Models\DataMhs.php(82): CodeIgniter\Database\BaseBuilder->insert('')
+#5 C:\xampp\htdocs\codeigniter4\app\Controllers\M_MahasiswaController.php(60): App\Models\DataMhs->insertMahasiswa(Array)
+#6 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->save()
+#7 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+#8 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2024-04-05 01:36:58 --> mysqli_sql_exception: Unknown column '2002-09-10' in 'field list' in C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tg...', 0)
+#1 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tg...')
+#2 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tg...')
+#3 C:\xampp\htdocs\codeigniter4\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tg...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4\app\Models\DataMhs.php(85): CodeIgniter\Database\BaseBuilder->insert('2002-09-10')
+#5 C:\xampp\htdocs\codeigniter4\app\Controllers\M_MahasiswaController.php(60): App\Models\DataMhs->insertMahasiswa(Array)
+#6 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->save()
+#7 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+#8 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2024-04-05 01:40:25 --> mysqli_sql_exception: Column count doesn't match value count at row 1 in C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `na...', 0)
+#1 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `na...')
+#2 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `na...')
+#3 C:\xampp\htdocs\codeigniter4\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `na...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4\app\Models\DataMhs.php(73): CodeIgniter\Database\BaseBuilder->insert('')
+#5 C:\xampp\htdocs\codeigniter4\app\Controllers\M_MahasiswaController.php(60): App\Models\DataMhs->insertMahasiswa(Array)
+#6 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->save()
+#7 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+#8 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2024-04-05 01:40:25 --> mysqli_sql_exception: Column count doesn't match value count at row 1 in C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ni...', 0)
+#1 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ni...')
+#2 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ni...')
+#3 C:\xampp\htdocs\codeigniter4\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ni...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4\app\Models\DataMhs.php(76): CodeIgniter\Database\BaseBuilder->insert('')
+#5 C:\xampp\htdocs\codeigniter4\app\Controllers\M_MahasiswaController.php(60): App\Models\DataMhs->insertMahasiswa(Array)
+#6 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->save()
+#7 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+#8 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2024-04-05 01:40:25 --> mysqli_sql_exception: Column count doesn't match value count at row 1 in C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `um...', 0)
+#1 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `um...')
+#2 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `um...')
+#3 C:\xampp\htdocs\codeigniter4\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `um...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4\app\Models\DataMhs.php(79): CodeIgniter\Database\BaseBuilder->insert('')
+#5 C:\xampp\htdocs\codeigniter4\app\Controllers\M_MahasiswaController.php(60): App\Models\DataMhs->insertMahasiswa(Array)
+#6 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->save()
+#7 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+#8 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2024-04-05 01:40:25 --> mysqli_sql_exception: Column count doesn't match value count at row 1 in C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `no...', 0)
+#1 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `no...')
+#2 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `no...')
+#3 C:\xampp\htdocs\codeigniter4\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `no...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4\app\Models\DataMhs.php(82): CodeIgniter\Database\BaseBuilder->insert('')
+#5 C:\xampp\htdocs\codeigniter4\app\Controllers\M_MahasiswaController.php(60): App\Models\DataMhs->insertMahasiswa(Array)
+#6 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->save()
+#7 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+#8 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2024-04-05 01:40:25 --> mysqli_sql_exception: Column count doesn't match value count at row 1 in C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tg...', 0)
+#1 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tg...')
+#2 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tg...')
+#3 C:\xampp\htdocs\codeigniter4\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tg...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4\app\Models\DataMhs.php(85): CodeIgniter\Database\BaseBuilder->insert('')
+#5 C:\xampp\htdocs\codeigniter4\app\Controllers\M_MahasiswaController.php(60): App\Models\DataMhs->insertMahasiswa(Array)
+#6 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->save()
+#7 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+#8 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2024-04-05 01:45:53 --> mysqli_sql_exception: Unknown column 'gg' in 'field list' in C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `na...', 0)
+#1 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `na...')
+#2 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `na...')
+#3 C:\xampp\htdocs\codeigniter4\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `na...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4\app\Models\DataMhs.php(73): CodeIgniter\Database\BaseBuilder->insert('gg')
+#5 C:\xampp\htdocs\codeigniter4\app\Controllers\M_MahasiswaController.php(60): App\Models\DataMhs->insertMahasiswa(Array)
+#6 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->save()
+#7 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+#8 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-04-05 01:45:53 --> TypeError: Cannot access offset of type string on string
+in APPPATH\Models\DataMhs.php on line 77.
+ 1 APPPATH\Controllers\M_MahasiswaController.php(60): App\Models\DataMhs->insertMahasiswa([...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+ERROR - 2024-04-05 01:58:02 --> mysqli_sql_exception: Unknown column 'gg' in 'field list' in C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `na...', 0)
+#1 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `na...')
+#2 C:\xampp\htdocs\codeigniter4\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `na...')
+#3 C:\xampp\htdocs\codeigniter4\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `na...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4\app\Models\DataMhs.php(73): CodeIgniter\Database\BaseBuilder->insert('gg')
+#5 C:\xampp\htdocs\codeigniter4\app\Controllers\M_MahasiswaController.php(60): App\Models\DataMhs->insertMahasiswa(Array)
+#6 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->save()
+#7 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+#8 C:\xampp\htdocs\codeigniter4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-04-05 01:58:02 --> TypeError: Cannot access offset of type string on string
+in APPPATH\Models\DataMhs.php on line 77.
+ 1 APPPATH\Controllers\M_MahasiswaController.php(60): App\Models\DataMhs->insertMahasiswa([...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\M_MahasiswaController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\M_MahasiswaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-04-05 05:23:42 --> ParseError: syntax error, unexpected token "/"
+in APPPATH\Config\Routes.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4\\public\\index.php')

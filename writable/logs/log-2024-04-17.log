@@ -1,0 +1,31 @@
+CRITICAL - 2024-04-17 07:49:48 --> ErrorException: Undefined variable $mahasiswa
+in APPPATH\Views\v_barang.php on line 12.
+ 1 APPPATH\Views\v_barang.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mahasiswa', 'C:\\xampp\\htdocs\\codeigniter4pt2\\app\\Views\\v_barang.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4pt2\\app\\Views\\v_barang.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('v_barang', [], true)
+ 5 APPPATH\Controllers\c_barang.php(9): view('v_barang')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\c_barang->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_barang))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4pt2\\public\\index.php')
+CRITICAL - 2024-04-17 07:54:40 --> ErrorException: Undefined variable $mahasiswa
+in APPPATH\Views\v_mhs.php on line 12.
+ 1 APPPATH\Views\v_mhs.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mahasiswa', 'C:\\xampp\\htdocs\\codeigniter4pt2\\app\\Views\\v_mhs.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\codeigniter4pt2\\app\\Views\\v_mhs.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('v_mhs', [], true)
+ 5 APPPATH\Controllers\c_mhs.php(9): view('v_mhs')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\c_mhs->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_mhs))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4pt2\\public\\index.php')
+CRITICAL - 2024-04-17 07:58:38 --> Error: Class "App\Controllers\MahasiswaModel" not found
+in APPPATH\Controllers\c_mhs.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\c_mhs->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_mhs))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\codeigniter4pt2\\public\\index.php')
