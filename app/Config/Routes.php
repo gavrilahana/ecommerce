@@ -11,3 +11,7 @@ $routes->get('/barang/edit', 'c_mhs::index');
 
 $routes->get('/v_cart', 'c_cart::index');
 $routes->get('/cart/add/(:num)', 'c_cart::add/$1');
+$routes->get('/cart', 'c_cart::index');
+
+$routes->get('/checkout', 'c_checkout::create');
+$routes->post('/checkout/store', 'c_checkout::store');

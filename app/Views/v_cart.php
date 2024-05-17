@@ -41,7 +41,7 @@
             </tr>
             <tr>
                 <td colspan="4" class="text-start">
-                    <a href="<?= site_url('checkout') ?>" class="btn btn-primary">Lanjut</a>
+                    <a href="<?= site_url('/checkout') ?>" class="btn btn-primary">Lanjut</a>
                 </td>
             </tr>
         </tfoot>
