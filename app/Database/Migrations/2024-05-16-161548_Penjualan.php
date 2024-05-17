@@ -30,10 +30,6 @@ class Penjualan extends Migration
                 'type'           => 'VARCHAR',
                 'constraint'     => '10',
             ],
-            'total'       => [
-                'type'           => 'DECIMAL',
-                'constraint'     => '15,2',
-            ],
             'created_at'  => [
                 'type'           => 'DATETIME',
                 'null'           => true,
