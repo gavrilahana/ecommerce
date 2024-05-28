@@ -13,6 +13,7 @@
     <table class="table table-dark table-striped">
         <thead>
             <tr>
+                <th scope="col">Foto</th>
                 <th scope="col">Nama Barang</th>
                 <th scope="col">Harga</th>
                 <th scope="col">Jumlah</th>
@@ -27,6 +28,7 @@
                 $totalHarga += $subtotal;
             ?>
                 <tr>
+                    <td><img src="<?= ($item['foto']) ?>" alt="<?= $item['nama'] ?>" width="80" height="80"></td>
                     <td><?= $item['nama'] ?></td>
                     <td>Rp. <?= number_format($item['harga'], 0, ',', '.') ?></td>
                     <td><?= isset($item['quantity']) ? $item['quantity'] : 0 ?></td>
@@ -36,11 +38,11 @@
         </tbody>
         <tfoot>
             <tr>
-                <th colspan="3" class="text-end">Total Harga:</th>
+                <th colspan="4" class="text-end">Total Harga:</th>
                 <td>Rp. <?= number_format($totalHarga, 0, ',', '.') ?></td>
             </tr>
             <tr>
-                <td colspan="4" class="text-start">
+                <td colspan="5" class="text-start">
                     <a href="<?= site_url('/checkout') ?>" class="btn btn-primary">Lanjut</a>
                 </td>
             </tr>
